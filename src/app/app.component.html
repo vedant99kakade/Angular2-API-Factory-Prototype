@@ -1,0 +1,12 @@
+<h1>
+  <button (click)="getConnectorListOfNames()">Get Connector names</button>
+  <button (click)="getConnectorListOfIds()">Get Connector Id</button>  
+  <button (click)="getJobsListOfNames()">Get Job names</button>
+  <button (click)="getJobsListOfIds()">Get Job Id</button>  
+
+  <div class="">
+      <ul>
+          <li *ngFor = "let data of listOfData">{{ data }}</li>
+      </ul>
+  </div>
+</h1>
